@@ -20,7 +20,7 @@ export default defineConfig({
     extensions: ['.js', '.jsx', 'json', '.ts', '.tsx', '.vue']
   },
     server: {
-        port: 3000,
+        port: 8008,
         // proxy: {
         //     '/api': {
         //         target: 'https://geo.datav.aliyun.com',
