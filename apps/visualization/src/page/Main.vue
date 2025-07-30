@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import autofit from 'autofit.js'
+import gsData from '@/assets/MapData/gs.json'
 import { getVisualization } from '@/api/visualization'
 import LeftPanel from "@/components/left/LeftPanel"
 import RightPanel from "@/components/right/RightPanel"
@@ -9,7 +10,8 @@ import Footer from "@/components/Footer"
 
 const data = ref(null)
 const loadData = async () => {
-  data.value = await getVisualization()
+  //data.value = await getVisualization()
+  data.value = gsData
   console.log(data.value);
 }
 onMounted(() => {
